@@ -72,7 +72,7 @@ const App = () => {
       ios: "iOS",
       verifyHuman: "Human Verification Required",
       verifyText: "Complete verification to download DOOM",
-      verifyInstructions: "Please verify you're human to continue",
+      verifyInstructions: "Please verify you're human by complete an offer to continue",
       notRobot: "I'm not a robot",
       checkNow: "VERIFY NOW"
     },
@@ -105,7 +105,7 @@ const App = () => {
       ios: "iOS",
       verifyHuman: "Vérification humaine requise",
       verifyText: "Complétez la vérification pour télécharger DOOM",
-      verifyInstructions: "Veuillez vérifier que vous êtes humain pour continuer",
+      verifyInstructions: "Veuillez vérifier que vous êtes humain par completé un offer pour continuer",
       notRobot: "Je ne suis pas un robot",
       checkNow: "VÉRIFIER"
     }
