@@ -254,7 +254,7 @@ const App = () => {
                   darkMode ? 'bg-blue-600/30' : 'bg-blue-400/30'
                 } blur-lg group-hover:opacity-75 transition-opacity duration-300`} />
                 <img 
-                  src="/public/game-logo.jpg" 
+                  src="../src/assets/game-background.jpg" 
                   alt="Game Preview"
                   className="relative rounded-xl shadow-2xl border-4 border-white/10 transform group-hover:scale-[1.02] transition-transform duration-300 w-full max-w-lg"
                   style={{
