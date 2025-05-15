@@ -8,6 +8,16 @@ import {
 import { IoMdNotificationsOutline } from 'react-icons/io';
 import { MdOutlineSecurity } from 'react-icons/md';
 
+// Import your images (assuming they are in your src/assets folder)
+import screen1 from './assets/screen1.webp';
+import screen2 from './assets/screen2.webp';
+import screen3 from './assets/screen3.webp';
+import screen5 from './assets/screen5.webp';
+import screen6 from './assets/screen6.webp';
+import screen7 from './assets/screen7.webp';
+import gameBackground from './assets/game-background.jpg';
+import gameLogo from './assets/game-logo.jpg';
+
 const App = () => {
   // State
   const [darkMode, setDarkMode] = useState(true);
@@ -105,12 +115,12 @@ const App = () => {
   
   // Constants
   const gameScreenshots = [
-    "../src/assets/screen1.webp",
-    "../src/assets/screen2.webp",
-    "../src/assets/screen3.webp",
-    "../src/assets/screen5.webp",
-    "../src/assets/screen6.webp",
-    "../src/assets/screen7.webp",
+    screen1,
+    screen2,
+    screen3,
+    screen5,
+    screen6,
+    screen7,
   ];
 
   const features = [
@@ -200,10 +210,9 @@ const App = () => {
         >
           {/* Background image with overlay */}
           <div 
-            className="absolute inset-0 bg-[url('../src/assets/game-background.jpg')] bg-cover bg-center opacity-40"
+            className="absolute inset-0 bg-cover bg-center opacity-40"
             style={{
-              backgroundSize: "cover",
-              backgroundPosition: "center",
+              backgroundImage: `url(${gameBackground})`,
               filter: darkMode ? "brightness(0.5)" : "brightness(1)"
             }}
           />
@@ -254,7 +263,7 @@ const App = () => {
                   darkMode ? 'bg-blue-600/30' : 'bg-blue-400/30'
                 } blur-lg group-hover:opacity-75 transition-opacity duration-300`} />
                 <img 
-                  src="../src/assets/game-background.jpg" 
+                  src={gameLogo} 
                   alt="Game Preview"
                   className="relative rounded-xl shadow-2xl border-4 border-white/10 transform group-hover:scale-[1.02] transition-transform duration-300 w-full max-w-lg"
                   style={{
