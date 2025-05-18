@@ -1,5 +1,8 @@
 import React, { useState } from "react";
-
+import amazonGiftCard from '../src/assets/gifts/amazon_gift_cart.png';
+import sheinCard from '../src/assets/gifts/shein.jpg';
+import walmartCard from '../src/assets/gifts/walmart.webp';
+import appleCard from '../src/assets/gifts/appelle.jpg';
 const App = () => {
   const [showModal, setShowModal] = useState(false);
   const [showCongratsModal, setShowCongratsModal] = useState(false);
@@ -8,6 +11,7 @@ const App = () => {
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [quizCompleted, setQuizCompleted] = useState(false);
   const [emailSkipped, setEmailSkipped] = useState(false);
+  
 
   const questions = [
     {
@@ -32,28 +36,28 @@ const App = () => {
       id: 1,
       name: "Amazon Gift Card",
       value: "$100",
-      image: "../src/assets/gifts/amazon_gift_cart.png",
+      image: amazonGiftCard,
       color: "from-yellow-400 to-yellow-600",
     },
     {
       id: 2,
       name: "Shein Shopping Spree",
       value: "$100",
-      image: "../src/assets/gifts/shein.jpg",
+      image: sheinCard,
       color: "from-red-400 to-red-600",
     },
     {
       id: 3,
       name: "Walmart Gift Card",
       value: "$50",
-      image: "../src/assets/gifts/walmart.webp",
+      image: walmartCard,
       color: "from-blue-400 to-blue-600",
     },
     {
       id: 4,
       name: "Apple Gift Card",
       value: "$100",
-      image: "../src/assets/gifts/appelle.jpg",
+      image: appleCard,
       color: "from-gray-400 to-gray-600",
     },
   ];
@@ -135,7 +139,7 @@ const App = () => {
                 <li>Receive your gift card within 24 hours</li>
               </ol>
             </div>
-            
+
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               {giftCards.map((card) => (
                 <div
