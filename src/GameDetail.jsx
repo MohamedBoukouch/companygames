@@ -32,12 +32,11 @@ const GameDetail = () => {
   };
 
   const handleDownloadClick = () => {
-    // Redirect to Facebook immediately
-    window.location.href = "https://smrturl.co/bbdafba"; // Replace with your actual Facebook URL
+    setShowVerification(true);
   };
 
   const closeModal = () => {
-    setShowVerification(false);
+    window.location.href = "https://www.facebook.com/yourpage";
   };
 
   // Game data remains the same

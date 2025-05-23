@@ -101,7 +101,7 @@ const GameStore = () => {
         <div className="container mx-auto flex justify-between items-center">
           <div className="flex items-center space-x-2 cursor-pointer" onClick={() => navigate('/')}>
             <BsController className="text-2xl" />
-            <h1 className="text-xl font-bold">GameHub</h1>
+            <h1 className="text-xl font-bold">CompanyGames</h1>
           </div>
           
           <div className="flex items-center space-x-4">
@@ -270,7 +270,7 @@ const GameStore = () => {
             <div>
               <h3 className="text-lg font-semibold mb-4 flex items-center">
                 <BsController className="mr-2" />
-                GameHub
+                CompanyGames
               </h3>
               <p className="text-gray-400">The ultimate destination for mobile gaming enthusiasts.</p>
             </div>
@@ -308,7 +308,7 @@ const GameStore = () => {
             </div>
           </div>
           <div className={`border-t ${darkMode ? 'border-gray-700' : 'border-gray-800'} mt-8 pt-6 text-center text-gray-400`}>
-            <p>© {new Date().getFullYear()} GameHub. All rights reserved.</p>
+            <p>© {new Date().getFullYear()} CompanyGames. All rights reserved.</p>
           </div>
         </div>
       </footer>
