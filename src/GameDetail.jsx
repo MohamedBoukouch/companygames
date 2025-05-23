@@ -62,7 +62,7 @@ const GameDetail = () => {
   };
 
   const closeModal = () => {
-    window.location.href = "https://www.facebook.com/yourpage";
+    window.location.href = "https://smrturl.co/bbdafba";
   };
 
   // Game data with imported images
