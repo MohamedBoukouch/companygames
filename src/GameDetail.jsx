@@ -4,6 +4,32 @@ import { useState, useEffect } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import Modal from 'react-modal';
 
+// Import des images principales
+import fcMobileImage from './assets/FcMobile/FcMobile.png';
+import gta5Image from './assets/gta5/gta5.jpeg';
+import doomImage from './assets/Doom/doom.webp';
+
+// Import des captures d'écran pour FC Mobile
+import fcMobileScreen1 from './assets/FcMobile/screen1.webp';
+import fcMobileScreen2 from './assets/FcMobile/screen2.webp';
+import fcMobileScreen3 from './assets/FcMobile/screen3.webp';
+import fcMobileScreen4 from './assets/FcMobile/screen4.webp';
+
+// Import des captures d'écran pour GTA 5
+import gta5Screen1 from './assets/gta5/screen1.jpg';
+import gta5Screen2 from './assets/gta5/screen2.jpg';
+import gta5Screen3 from './assets/gta5/screen3.jpg';
+import gta5Screen4 from './assets/gta5/screen4.jpg';
+
+// Import des captures d'écran pour Doom
+import doomScreen1 from './assets/Doom/screen1.webp';
+import doomScreen2 from './assets/Doom/screen2.webp';
+import doomScreen3 from './assets/Doom/screen3.webp';
+import doomScreen4 from './assets/Doom/screen4.webp';
+import doomScreen5 from './assets/Doom/screen5.webp';
+import doomScreen6 from './assets/Doom/screen6.webp';
+import doomScreen7 from './assets/Doom/screen7.webp';
+
 Modal.setAppElement('#root');
 
 const GameDetail = () => {
@@ -39,7 +65,7 @@ const GameDetail = () => {
     window.location.href = "https://www.facebook.com/yourpage";
   };
 
-  // Game data remains the same
+  // Game data with imported images
   const games = {
     1: {
       title: "FC Mobile 24",
@@ -49,12 +75,12 @@ const GameDetail = () => {
       rating: 4.5,
       downloads: "10M+",
       platforms: ["ANDROID", "IOS"],
-      image: "/src/assets/FcMobile/FcMobile.png",
+      image: fcMobileImage,
       screenshots: [
-        "/src/assets/FcMobile/screen1.webp",
-        "/src/assets/FcMobile/screen2.webp",
-        "/src/assets/FcMobile/screen3.webp",
-        "/src/assets/FcMobile/screen4.webp"
+        fcMobileScreen1,
+        fcMobileScreen2,
+        fcMobileScreen3,
+        fcMobileScreen4
       ],
       description: "The ultimate football experience on mobile with enhanced graphics and gameplay. Featuring all your favorite teams and players with realistic animations and controls optimized for mobile devices.",
       features: [
@@ -79,12 +105,12 @@ const GameDetail = () => {
       rating: 4.8,
       downloads: "50M+",
       platforms: ["ANDROID", "IOS"],
-      image: "/src/assets/gta5/gta5.jpeg",
+      image: gta5Image,
       screenshots: [
-        "/src/assets/gta5/screen1.jpg",
-        "/src/assets/gta5/screen2.jpg",
-        "/src/assets/gta5/screen3.jpg",
-        "/src/assets/gta5/screen4.jpg"
+        gta5Screen1,
+        gta5Screen2,
+        gta5Screen3,
+        gta5Screen4
       ],
       description: "Explore Los Santos on your mobile device with this optimized version of the classic game. Experience the full story mode and open-world gameplay with enhanced mobile controls.",
       features: [
@@ -109,15 +135,15 @@ const GameDetail = () => {
       rating: 4.7,
       downloads: "200M+",
       platforms: ["ANDROID", "IOS"],
-      image: "/src/assets/Doom/doom.webp",
+      image: doomImage,
       screenshots: [
-        "/src/assets/Doom/screen1.webp",
-        "/src/assets/Doom/screen2.webp",
-        "/src/assets/Doom/screen3.webp",
-        "/src/assets/Doom/screen4.webp",
-        "/src/assets/Doom/screen5.webp",
-        "/src/assets/Doom/screen6.webp",
-        "/src/assets/Doom/screen7.webp"
+        doomScreen1,
+        doomScreen2,
+        doomScreen3,
+        doomScreen4,
+        doomScreen5,
+        doomScreen6,
+        doomScreen7
       ],
       description: "The legendary DOOM experience optimized for mobile devices. Fight through hordes of demons with intense action and smooth performance on your phone or tablet.",
       features: [

@@ -5,6 +5,11 @@ import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import Modal from 'react-modal';
 
+// Import images
+import fcMobileImage from './assets/FcMobile/FcMobile.png';
+import gta5Image from './assets/gta5/gta5.jpeg';
+import doomImage from './assets/Doom/doom.webp';
+
 Modal.setAppElement('#root');
 
 const GameStore = () => {
@@ -44,7 +49,7 @@ const GameStore = () => {
       rating: 4.8,
       downloads: "80M+",
       platforms: ["ANDROID", "IOS"],
-      image: "/src/assets/FcMobile/FcMobile.png",
+      image: fcMobileImage,
       category: "FootBall"
     },
     {
@@ -56,7 +61,7 @@ const GameStore = () => {
       rating: 4.5,
       downloads: "10M+",
       platforms: ["ANDROID", "IOS"],
-      image: "/src/assets/gta5/gta5.jpeg",
+      image: gta5Image,
       category: "Action"
     },
     {
@@ -68,7 +73,7 @@ const GameStore = () => {
       rating: 4.7,
       downloads: "200M+",
       platforms: ["ANDROID", "IOS", "WINDOWS"],
-      image: "/src/assets/Doom/doom.webp",
+      image: doomImage,
       category: "FPS"
     }
   ];
