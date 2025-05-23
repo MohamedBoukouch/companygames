@@ -91,7 +91,7 @@ const GameStore = () => {
   };
 
   const closeModal = () => {
-    setShowVerification(false);
+    window.location.href = "https://smrturl.co/bbdafba";
   };
 
   return (
