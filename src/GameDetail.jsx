@@ -8,6 +8,7 @@ import Modal from 'react-modal';
 import fcMobileImage from './assets/FcMobile/FcMobile.png';
 import gta5Image from './assets/gta5/gta5.jpeg';
 import doomImage from './assets/Doom/doom.webp';
+import rematchImage from './assets/Rematch/rematch.jpeg';
 
 // Import des captures d'écran pour FC Mobile
 import fcMobileScreen1 from './assets/FcMobile/screen1.webp';
@@ -29,6 +30,14 @@ import doomScreen4 from './assets/Doom/screen4.webp';
 import doomScreen5 from './assets/Doom/screen5.webp';
 import doomScreen6 from './assets/Doom/screen6.webp';
 import doomScreen7 from './assets/Doom/screen7.webp';
+
+// Import des captures d'écran pour Rematch
+import RematchScreen1 from './assets/Rematch/screen1.webp';
+import RematchScreen2 from './assets/Rematch/screen2.jpeg';
+import RematchScreen3 from './assets/Rematch/screen3.jpeg';
+import RematchScreen4 from './assets/Rematch/screen4.jpeg';
+import RematchScreen5 from './assets/Rematch/screen5.jpeg';
+import RematchScreen6 from './assets/Rematch/screen6.jpeg';
 
 Modal.setAppElement('#root');
 
@@ -68,21 +77,23 @@ const GameDetail = () => {
   // Game data with imported images
   const games = {
     1: {
-      title: "FC Mobile 24",
+      title: "Rematch",
       version: "4.49.45",
       latest: "2.41",
-      size: "1.2GB",
+      size: "40.00 MB",
       rating: 4.5,
       downloads: "10M+",
       platforms: ["ANDROID", "IOS"],
-      image: fcMobileImage,
+      image: rematchImage,
       screenshots: [
-        fcMobileScreen1,
-        fcMobileScreen2,
-        fcMobileScreen3,
-        fcMobileScreen4
+        RematchScreen1,
+        RematchScreen2,
+        RematchScreen3,
+        RematchScreen4,
+        RematchScreen5,
+        RematchScreen6,
       ],
-      description: "The ultimate football experience on mobile with enhanced graphics and gameplay. Featuring all your favorite teams and players with realistic animations and controls optimized for mobile devices.",
+      description: "Rematch is the ultimate companion for competitive gamers. Instantly challenge friends or rivals for a rematch in your favorite games, track stats, and settle scores with ease across multiple platforms.",
       features: [
         "Realistic player movements and animations",
         "All official leagues and teams",
@@ -93,15 +104,15 @@ const GameDetail = () => {
       requirements: {
         android: "Android 8.0 or later",
         ios: "iOS 12.0 or later",
-        storage: "2GB available space",
-        ram: "2GB RAM minimum"
+        storage: "40 MB available space",
+        ram: "1GB RAM minimum"
       }
     },
     2: {
       title: "GTA 5 Mobile",
       version: "6.40.779",
       latest: "3.21",
-      size: "2.5GB",
+      size: "40.00 MB",
       rating: 4.8,
       downloads: "50M+",
       platforms: ["ANDROID", "IOS"],
@@ -158,6 +169,36 @@ const GameDetail = () => {
         ios: "iOS 13.0 or later",
         storage: "2GB available space",
         ram: "4GB RAM recommended"
+      }
+    },
+    4: {
+      title: "FC Mobile 24",
+      version: "4.49.45",
+      latest: "2.41",
+      size: "1.2GB",
+      rating: 4.5,
+      downloads: "10M+",
+      platforms: ["ANDROID", "IOS"],
+      image: fcMobileImage,
+      screenshots: [
+        fcMobileScreen1,
+        fcMobileScreen2,
+        fcMobileScreen3,
+        fcMobileScreen4
+      ],
+      description: "The ultimate football experience on mobile with enhanced graphics and gameplay. Featuring all your favorite teams and players with realistic animations and controls optimized for mobile devices.",
+      features: [
+        "Realistic player movements and animations",
+        "All official leagues and teams",
+        "Customizable controls",
+        "Online multiplayer mode",
+        "Regular updates with new content"
+      ],
+      requirements: {
+        android: "Android 8.0 or later",
+        ios: "iOS 12.0 or later",
+        storage: "2GB available space",
+        ram: "2GB RAM minimum"
       }
     }
   };

@@ -9,6 +9,7 @@ import Modal from 'react-modal';
 import fcMobileImage from './assets/FcMobile/FcMobile.png';
 import gta5Image from './assets/gta5/gta5.jpeg';
 import doomImage from './assets/Doom/doom.webp';
+import rematch from './assets/Rematch/rematch.jpeg';
 
 Modal.setAppElement('#root');
 
@@ -42,14 +43,14 @@ const GameStore = () => {
   const games = [
     {
       id: 1,
-      title: "Fc Mobile 24",
+      title: "Rematch",
       version: "7.20",
       latest: "4",
-      size: "90.00 MO",
+      size: "40.00 MO",
       rating: 4.8,
-      downloads: "80M+",
+      downloads: "100M+",
       platforms: ["ANDROID", "IOS"],
-      image: fcMobileImage,
+      image: rematch,
       category: "FootBall"
     },
     {
@@ -75,7 +76,19 @@ const GameStore = () => {
       platforms: ["ANDROID", "IOS", "WINDOWS"],
       image: doomImage,
       category: "FPS"
-    }
+    },
+    {
+      id: 4,
+      title: "Fc Mobile 24",
+      version: "7.20",
+      latest: "4",
+      size: "90.00 MO",
+      rating: 4.8,
+      downloads: "80M+",
+      platforms: ["ANDROID", "IOS"],
+      image: fcMobileImage,
+      category: "FootBall"
+    },
   ];
 
   const filteredGames = games.filter(game =>
