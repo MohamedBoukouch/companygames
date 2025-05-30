@@ -9,7 +9,7 @@ import Modal from 'react-modal';
 import fcMobileImage from './assets/FcMobile/FcMobile.png';
 import gta5Image from './assets/gta5/gta5.jpeg';
 import doomImage from './assets/Doom/doom.webp';
-import rematch from './assets/Rematch/rematch.jpeg';
+import rematch from './assets/Rematch/rematch.jpg';
 
 Modal.setAppElement('#root');
 

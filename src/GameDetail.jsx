@@ -8,7 +8,7 @@ import Modal from 'react-modal';
 import fcMobileImage from './assets/FcMobile/FcMobile.png';
 import gta5Image from './assets/gta5/gta5.jpeg';
 import doomImage from './assets/Doom/doom.webp';
-import rematchImage from './assets/Rematch/rematch.jpeg';
+import rematchImage from './assets/Rematch/rematch.jpg';
 
 // Import des captures d'écran pour FC Mobile
 import fcMobileScreen1 from './assets/FcMobile/screen1.webp';
