@@ -351,11 +351,12 @@ const GameStore = () => {
           
           <div className={`p-4 mb-4 rounded-lg ${darkMode ? 'bg-gray-700' : 'bg-blue-50'} border ${darkMode ? 'border-gray-600' : 'border-blue-200'}`}>
             <h3 className="font-bold mb-2">Enter Your Details to Have a Chance to Open Mystery Box Now!</h3>
-            <p className="text-sm mb-4">أدخل رقم التربية الشخصي الخاص به لمشاهدة متعلق النهير</p>
+            <p className="text-sm mb-4">أدخل رقم التعريف التربوي الخاص بك لمشاهدة المحتوى المتعلق بالصندوق الغامض</p>
             <button className={`w-full py-2 rounded-lg font-medium ${darkMode ? 'bg-indigo-700 hover:bg-indigo-600' : 'bg-indigo-600 hover:bg-indigo-700'} text-white`}>
-              إلنجبية الآن
+              افتح الآن
             </button>
           </div>
+
           
           <p className="text-center mb-4 text-red-600">Waiting for verification...</p>
           
