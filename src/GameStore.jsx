@@ -326,7 +326,7 @@ const GameStore = () => {
             </div>
           </div>
           <div className={`border-t ${darkMode ? 'border-gray-700' : 'border-gray-800'} mt-8 pt-6 text-center text-gray-400`}>
-            <p>© {new Date().getFullYear()} CompanyGames. All rights reserved.</p>
+            <p>© {new Date().getFullYear()} x7ero. All rights reserved.</p>
           </div>
         </div>
       </footer>
