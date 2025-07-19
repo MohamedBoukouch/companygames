@@ -10,7 +10,7 @@ const Roblox = () => {
   const [showVerification, setShowVerification] = useState(false);
   const [selectedPackage, setSelectedPackage] = useState(null);
 
-  const robuxPackages = [
+  const RobloxPackages = [
     { price: "$0.00", amount: "1,000", id: 1 },
     { price: "$1.00", amount: "5,000", id: 2 },
     { price: "$3.00", amount: "10,000", id: 3 },
@@ -47,7 +47,7 @@ const Roblox = () => {
         <div className="flex space-x-3 sm:space-x-6 text-gray-700">
           <span className="hidden sm:inline">Discover</span>
           <span className="hidden sm:inline">Marketplace</span>
-          <span>Robux</span>
+          <span>Roblox</span>
         </div>
       </div>
 
@@ -60,7 +60,7 @@ const Roblox = () => {
         />
         <div className="absolute inset-0  bg-opacity-30 flex flex-col items-center justify-center p-4 text-center">
           <p className="text-white text-xs sm:text-sm md:text-base max-w-2xl mx-auto">
-            Robux allows you to purchase upgrades for your avatar or buy special abilities in experiences.
+            Roblox allows you to purchase upgrades for your avatar or buy special abilities in experiences.
           </p>
         </div>
       </div>
@@ -91,7 +91,7 @@ const Roblox = () => {
               />
               <h2 className="text-xl sm:text-2xl font-bold mb-2">Last step</h2>
               <p className="text-gray-600 text-sm sm:text-base mb-4">
-                Please verify that you are not a robot to claim Robux!
+                Please verify that you are not a robot to claim Roblox!
               </p>
               
               <div className="bg-blue-50 border border-blue-200 rounded-lg p-4 mb-4">
@@ -123,9 +123,9 @@ const Roblox = () => {
       {showPackages && !showVerification && (
         <div className="w-full px-4 mt-8 sm:mt-10">
           <div className="max-w-screen-md mx-auto bg-white shadow-md rounded-md p-4 sm:p-6">
-            <h2 className="text-xl sm:text-2xl font-bold mb-4 sm:mb-6 text-center">Select Robux Package</h2>
+            <h2 className="text-xl sm:text-2xl font-bold mb-4 sm:mb-6 text-center">Select Roblox Package</h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4">
-              {robuxPackages.map((pkg) => (
+              {RobloxPackages.map((pkg) => (
                 <div 
                   key={pkg.id}
                   className="flex justify-between items-center p-3 sm:p-4 border border-gray-200 rounded-lg hover:bg-gray-50 transition"
@@ -138,7 +138,7 @@ const Roblox = () => {
                     />
                     <div>
                       <p className="text-green-600 font-bold text-sm sm:text-base">{pkg.price}</p>
-                      <p className="text-gray-500 text-xs sm:text-sm">Robux Amount</p>
+                      <p className="text-gray-500 text-xs sm:text-sm">Roblox Amount</p>
                     </div>
                   </div>
                   <div className="text-right">
